@@ -33,13 +33,16 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 #containerBotones{
     color: azure;
     display: flex;
     flex-direction: row;
     width: 40%;
+    max-width: 40%;
     justify-content: space-evenly;
+    transition: 1s all;
 }
 #botonPlayTimer,
 #botonStopTimer,
@@ -59,4 +62,19 @@ body{
 #botonResetTimer:hover{
     cursor: pointer;
     text-shadow: 0 0 20px #FFFFFF;
+}
+
+@media only screen and (max-width: 750px) {
+
+    #containerBotones{
+        width: 60%;
+        max-width: 60%;
+    }
+}
+@media only screen and (max-width: 490px) {
+
+    #containerBotones{
+        width: 100%;
+        max-width: 100%;
+    }
 }
