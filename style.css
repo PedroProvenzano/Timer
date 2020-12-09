@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Changa', sans-serif;
+}
+#timer,
+#botonPlayTimer,
+#botonStopTimer,
+#botonResetTimer{
+    color: #FFFFFF;
+    background: #000000;
+    text-shadow: 0 0 15px #FFFFFF;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    height: 100%; 
+    background-color: black;
+}
+#timerContainer{
+    color: azure;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#containerBotones{
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-evenly;
+}
+#botonPlayTimer,
+#botonStopTimer,
+#botonResetTimer{
+    border: azure solid 5px;
+    border-radius: 10%;
+    height: 3rem;
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+#botonPlayTimer:hover,
+#botonStopTimer:hover,
+#botonResetTimer:hover{
+    cursor: pointer;
+    text-shadow: 0 0 20px #FFFFFF;
+}
